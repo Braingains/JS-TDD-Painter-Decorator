@@ -1,9 +1,10 @@
 const Paint = function (litres) {
     this.litres = litres;
+    this.empty = false;
 }
 
-// Paint.prototype.paint = function () {
-//     this.painted = true;
-// }
+Paint.prototype.use = function () {
+    this.empty = true;
+}
 
 module.exports = Paint;

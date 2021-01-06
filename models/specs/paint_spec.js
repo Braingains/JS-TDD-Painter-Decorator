@@ -13,14 +13,15 @@ describe('Paint', function () {
         assert.strictEqual(actual, 5); //Assert
 
     });
-    xit('be able to check if it is empty', function () {
-        const actual = test_room.painted; // Act
-        assert.strictEqual(actual, false); // Assert
+    it('be able to check if it is empty', function () {
+        test_paint.empty = true;
+        const actual = test_paint.empty; // Act
+        assert.strictEqual(actual, true); // Assert
 
     });
     xit('be able to empty itself of paint', function () {
-        test_room.paint()
-        const actual = test_room.painted; //Act
+        test_paint.use();
+        const actual = test_paint.empty; //Act
         assert.strictEqual(actual, true); //Assert
 
 
