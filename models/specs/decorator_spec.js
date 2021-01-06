@@ -7,18 +7,21 @@ const Room = require('../room.js');
 describe('Decorator', function () {
     let test_decorator;
     beforeEach(function () {
-        test_decorator = new Decorator()
+        test_decorator = new Decorator();
+        test_paint = new Paint(5);
     })
+
+
 
     it('start with an empty paint stock', function () {
         const actual = test_decorator.stock; // Act
-        assert.strictEqual(actual, 0); //Assert
+        assert.deepStrictEqual(actual, []); //Assert
 
     });
-    xit('be able to add a can of paint to paint stock', function () {
-        test_paint.empty = true;
-        const actual = test_paint.empty; // Act
-        assert.strictEqual(actual, true); // Assert
+    it('be able to add a can of paint to paint stock', function () {
+        test_decorator.addCanToStock(test_paint);
+        const actual = test_decorator.stock.length // Act
+        assert.strictEqual(actual, 1); // Assert
 
     });
     xit('be able to calculate total litres paint it has in stock', function () {
