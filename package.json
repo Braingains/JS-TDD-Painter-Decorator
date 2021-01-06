@@ -1,0 +1,22 @@
+{
+  "name": "lab_tdd_painter_decorator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Braingains/tdd_painter_decorator_lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Braingains/tdd_painter_decorator_lab/issues"
+  },
+  "homepage": "https://github.com/Braingains/tdd_painter_decorator_lab#readme",
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
+}
